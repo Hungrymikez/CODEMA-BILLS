@@ -15,8 +15,10 @@ let salud=[];
 let aux_transporte=[];
 let total_pago=[];
 
+let valorcompra= 0.45;
+let resultado = valorcompra > 0 ? true : false;
 
-
+console.log(resultado);
 
 botonsito.addEventListener("click",()=>{
 

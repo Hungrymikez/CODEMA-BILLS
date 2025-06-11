@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller numero 1 de JAVASCRIPT</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary pt-0 p-0">
+            <div class="container-fluid barra_navegacion pt-3 pb-3 ">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/Logo de Codema.png" class="logo_codema" alt="Logo de CODEMA ENTERTAINMENT" style="width: 90px;">
+                </a>
+                <h3><strong>CODEMA ENTERTAINMENT</strong></h3>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pb-1 justify-content-center" id="navbarNav"> <!--justify-content-end-->
+                    <ul class="navbar-nav">
+                        <li class="nav-item text-center text-light">
+                            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item text-center text-light">
+                            <a class="nav-link active" aria-current="page" href="modulo-nomina.html">NOMINA</a>
+                        </li>
+                        <li class="nav-item text-center text-light">
+                            <a class="nav-link active" aria-current="page" href="factura.html">FACTURA</a>
+                        </li>
+                        <li class="nav-item text-center text-light">
+                            <a class="nav-link active" aria-current="page" href="factura_alterna.html">FACTURA ALTERNA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container-fluid pt-4 ">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1><strong>PRACTICA FACTURA</strong></h1>
+                </div>
+                <div class="col-4 text-start">
+                    <h2><strong>PRUEBA JS</strong></h2>
+                </div>
+            </div>
+            <!--
+            <div class="row">
+                <div class="col-12 text-START p-2">
+                    <h3><strong>PRUEBA JS</strong></h3>
+                </div>
+            </div>
+            -->
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid-pt-4 pb-4">
+            <div class="row needs-validation" novalidate> <!--para validar -->
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="nombre_producto" placeholder="Nombre del producto"  required>
+                        <label for="floatingInput">Nombre del producto</label>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="cantidad_producto" placeholder="Digite la Cantidad" required>
+                        <label for="floatingInput">Cantidad</label>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="valor_unitario" placeholder="Digite el valor unitario" required>
+                        <label for="floatingInput">Valor Unitario</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12 text-center">
+                    <button type="Submit" id="boton_agregar" class="btn btn-outline-info">Ingresar</button>
+                    <button type="Submit" id="boton_descuento" class="btn btn-outline-warning">Descuento</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+<!--<section> PREGUNTAR SI SE PUEDE ASI
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-hover table-info table-striped">
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Nombre</th>
+                                <th>Cantidad</th>
+                                <th>Valor Unitario</th>
+                                <th>Valor Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="#"> 
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><strong>Subtotal</strong></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><strong>Descuento</strong></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><strong>IVA19%</strong></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><strong>Total: </strong></td>
+                            </tr>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>    -->
+
+    <!-- MODALES -->
+
+    <!------------------------------------------------------------------------------------->
+
+
+<!------------------------------------------------------------------------------------->
+
+    <footer class="footer ">
+        <div class="container-fluid text-center text-dark ">
+            <div class="row">
+                <div class="col">
+                    <img src="img/Logo animado.gif" alt="Logo animado de codema " style="width: 100px; height: 100px;">
+                    <div class="text-light">
+                        <p>Copyright &copy; CODEMA SOFTWARE. Todos los Derechos Reservados.</p>
+                    </div>
+                    <!--<a href="https://github.com/Hungrymikez" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github icono"></i></a>
+                    <a href="https://www.linkedin.com/in/hungrymikez/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin icono"></i></a>
+                    -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->    
+    <script src="js/Practica.js"></script>
+    <script src="js/factura_alterna.js"></script>
+
+
+<!--  
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+
+    <script>
+        (() => {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+    }, false)
+    })
+})() -->
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

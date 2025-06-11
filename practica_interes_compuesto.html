@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller numero 1 de JAVASCRIPT</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary pt-0 p-0">
+            <div class="container-fluid barra_navegacion pt-3 pb-3 ">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/Logo de Codema.png" class="logo_codema" alt="Logo de CODEMA ENTERTAINMENT" style="width: 110px;">
+                </a>
+                <h2><strong>CODEMA ENTERTAINMENT</strong></h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pb-1 justify-content-center" id="navbarNav"> <!--justify-content-end-->
+                    <ul class="navbar-nav">
+                        <li class="nav-item text-center text-light">
+                            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item text-center text-light">
+                            <a class="nav-link active" aria-current="page" href="modulo-nomina.html">NOMINA</a>
+                        </li>
+                        <li class="nav-item text-center text-light">
+                            <a class="nav-link active" aria-current="page" href="factura.html">FACTURA</a>
+                        </li>
+                        <li class="nav-item text-center text-light">
+                            <a class="nav-link active" aria-current="page" href="factura_alterna.html">FACTURA ALTERNA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container-fluid pt-4 ">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2><strong>CALCULO DE FACTURA ALTERNA</strong></h2>
+                </div>
+            </div>
+            <!--
+            <div class="row">
+                <div class="col-12 text-START p-2">
+                    <h3><strong>PRUEBA JS</strong></h3>
+                </div>
+            </div>
+            -->
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid pt-4">
+            <div class="row" id="formulario">
+                <div class="col-4">
+                    <div class="form-text" id="basic-addon4">Nombre Articulo</div>
+                    <div class="input-group mb-3">
+                        <input id="inputValorArticulo" type="text" class="form-control " placeholder="Nombre del articulo" aria-label="Ingrese el nombre del articulo" aria-describedby="button-addon2">
+                    </div> 
+                    <div class="form-text" id="basic-addon4">Campo obligatorio</div>
+                </div>
+                <div class="col-4">
+                    <div class="form-text" id="basic-addon4">Cantidad</div>
+                    <div class="input-group mb-3">
+                        <input id="inputValorCantidad" type="text" class="form-control" placeholder="123..." aria-label="Ingrese la cantidad de el articulo" aria-describedby="button-addon2">
+                    </div> 
+                    <div class="form-text" id="basic-addon4">Ingresa un valor mayor a cero</div>
+                </div>
+                <div class="col-4">
+                    <div class="form-text" id="basic-addon4">Valor Unitario</div>
+                    <div class="input-group mb-3">
+                        <input id="inputValorUnitario" type="text" class="form-control" placeholder="123..." aria-label="Ingrese el  precio del articulo" aria-describedby="button-addon2">
+                    </div> 
+                    <div class="form-text" id="basic-addon4">Ingresa un valor mayor o igual a Cero </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button class="btn btn-outline-danger" type="submit" id="agregar">Agregar</button>
+                    <button class="btn btn-outline-warning bt-lg" data-bs-toggle="modal" data-bs-target="#modal_2" type="button">
+                        Agregar Descuento
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid pt-3">
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-hover table-info table-striped table-resposive">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>No.</th>
+                                <th>Nombre</th>
+                                <th>Cantidad</th>
+                                <th>Valor Unitario</th>
+                                <th>Subtotal</th>
+                                <th>Total IVA</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cuerpo_tabla">
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-4 ">
+                    <table class="table table-hover table-info table-striped table-resposive">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Total a pagar</th>
+                                <th id="cuerpo_tabla1"></th>
+                            </tr>
+                            <tr>
+                                <th>Descuento</th>
+                                <th id="cuerpo_tabla3"></th>
+                            </tr>
+                            <tr>
+                                <th>Total a pagar con descuento</th>
+                                <th id="cuerpo_tabla2"></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+<!--<section> PREGUNTAR SI SE PUEDE ASI
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-hover table-info table-striped">
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Nombre</th>
+                                <th>Cantidad</th>
+                                <th>Valor Unitario</th>
+                                <th>Valor Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="#"> 
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><strong>Subtotal</strong></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><strong>Descuento</strong></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><strong>IVA19%</strong></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><strong>Total: </strong></td>
+                            </tr>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>    -->
+
+    <!-- MODALES -->
+
+    <!------------------------------------------------------------------------------------->
+    <div class="container col-12 col-sm-6 col-md-3">
+        <div class="row mt-5">
+            <div class="modal fade" id="modal_2" tabindex="-1" aria-hidden="true" aria-labelledby="label-modal_2" data-bs-backdrop="static"><!--el aria es una propiedad para dispositivos de lesctura especiales-->
+                <!--Se crea caja de dialogo-->
+                <div class="modal-dialog modal-dialog-centered">
+                    <!--Se crea el contenido de la caja--><!--Se crea la caja para guardar el contenido-->
+                    <div class="modal-content">
+                        <!--Encabezado de la caja modal-->
+                        <div class="modal-header"><!--Titulo de la ventana modal--> 
+                                <h2 class="modal-title">Digitar Descuento</h2>
+                        </div>
+                        <div class="modal-body"><!--Cuerpo de la caja modal-->
+                            
+                            <input id="valor_descuento" type="text" class="form-control " placeholder="Anexe cantidad monetaria $" aria-label="Ingresar Descuento" aria-describedby="button-addon2">
+                        </div>
+                        <!--Pie de pagina de la ventana modal-->
+                        <div class="modal-footer">
+                            <!--El data bs dismiss es para que al darle al boton me cierre la ventana modal-->
+                            <button type="button" class="btn btn-danger text-light" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success text-dark" data-bs-dismiss="modal" id="descuento">Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------------------------------------------------------------------------------------->
+
+    <footer class="footer">
+        <div class="container-fluid text-center text-dark p-3">
+            <div class="row">
+                <div class="col">
+                    <img src="img/Logo animado.gif" alt="Logo animado de codema " style="width: 100px; height: 100px;">
+                    <div class="text-light">
+                        <p>Copyright &copy; CODEMA SOFTWARE. Todos los Derechos Reservados.</p>
+                    </div>
+                    <!--<a href="https://github.com/Hungrymikez" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github icono"></i></a>
+                    <a href="https://www.linkedin.com/in/hungrymikez/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin icono"></i></a>
+                    -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->    
+    <script src="js/bootstrap.js"></script>
+    <script src="js/practica_interes_compuesto.js"></script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
